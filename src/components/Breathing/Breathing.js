@@ -1,10 +1,14 @@
 import React from 'react'
-import './Breathing.css'
+import styled from 'styled-components'
 
+const IFrame = styled.iframe`
+  width: 571.188px;
+  height: 571.188px;
+`
 export default function Breathing(props) {
   return (
     <div>
-      <iframe title='Breathing Exercise' className='iframe' src="http://xhalr.com"></iframe>
+      <IFrame title='Breathing Excercise' src="http://xhalr.com" />
     </div>
   )
 }
