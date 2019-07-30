@@ -19,9 +19,13 @@ const StyledLink = styled(Link)`
   font-weight: bold;
 `
 const ListItem = styled.li`
+  margin-left: 10px;
   display: inline-block;
   padding: 10px;
   text-transform: uppercase;
+  &:hover {
+    transform: scale(1.2)
+  }
 `
 
  export default class NavBar extends Component {
