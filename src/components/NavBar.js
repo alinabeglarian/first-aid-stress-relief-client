@@ -15,9 +15,11 @@ const List = styled.ul`
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: papayawhip;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-weight: bold;
 `
+
 const ListItem = styled.li`
   margin-left: 10px;
   display: inline-block;
@@ -36,7 +38,7 @@ const ListItem = styled.li`
             <StyledLink to={'/'}>Home</StyledLink>
           </ListItem>
           <ListItem>
-            <StyledLink to={'/'}>About</StyledLink>
+            <StyledLink to={'/about'}>About</StyledLink>
           </ListItem>
         </List>
      )
