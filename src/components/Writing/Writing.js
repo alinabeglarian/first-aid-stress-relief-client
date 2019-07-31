@@ -23,16 +23,23 @@ const Input = styled.input`
   margin: 2em;
   padding: 1em;
 `
+const P = styled.p`
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+`
 
 export default function Writing(props) {
   return (
-    <Form>
+
+    <Form onSubmit={props.onSubmit}>
+    <P>{props.message}</P>
       <Input 
         type='text' 
         name='text' 
-        placeholder='What do you feel stressed?' 
+        placeholder='Why do you feel stressed?' 
         value={props.text}
-        onChange={props.onChange}/>
+        onChange={props.onChange}
+      />
       <Button>Submit</Button>
     </Form>
   )
