@@ -1,6 +1,19 @@
 import React from 'react'
 import { Button } from '../Buttons'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components';
+import { zoomOut, zoomIn } from 'react-animations';
+
+const zoomOutAnimation = keyframes`${zoomOut}`;
+
+const ZoomOutDiv = styled.div`
+  animation: 60s ${zoomOutAnimation};
+`;
+
+const zoomInAnimation = keyframes`${zoomIn}`;
+
+const ZoomInDiv = styled.div`
+  animation: 150s ${zoomInAnimation};
+`;
 
 const Form = styled.form`
   width: 300px;
@@ -8,7 +21,7 @@ const Form = styled.form`
   flex-direction: column;
   align-items: center;
   margin: auto;
-  margin-top: 200px;
+  margin-bottom: 100px
 `
 
 const Input = styled.input`
@@ -25,14 +38,15 @@ const Input = styled.input`
 `
 const P = styled.p`
   font-family: 'Raleway', sans-serif;
-  font-size: 1em;
+  font-size: 5em;
 `
 
 export default function Writing(props) {
   return (
 
     <Form onSubmit={props.onSubmit}>
-    <P>{props.message}</P>
+    <ZoomInDiv><P>{props.niceMessage}</P></ZoomInDiv>
+    <ZoomOutDiv><P>{props.message}</P></ZoomOutDiv>
       <Input 
         type='text' 
         name='text' 

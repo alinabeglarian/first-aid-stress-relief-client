@@ -6,6 +6,7 @@ import { connect } from 'react-redux'
 export class WritingContainer extends Component {
   state = {
     text: '',
+    niceMessage: ''
   }
 
   onChange = (event) => {
@@ -19,6 +20,7 @@ export class WritingContainer extends Component {
     event.preventDefault()
     this.setState({
       text: '',
+      niceMessage: 'Watch how your worries disappear',
     })
   }
 
@@ -29,6 +31,7 @@ export class WritingContainer extends Component {
           onChange={this.onChange}
           onSubmit={this.onSubmit}
           message={this.props.writing}
+          niceMessage={this.state.niceMessage}
         />
     )
   }
