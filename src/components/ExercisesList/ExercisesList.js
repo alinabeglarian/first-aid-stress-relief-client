@@ -47,7 +47,7 @@ export default function ExercisesList(props) {
       <Container>
         <Link to={'/writing'}>
           <Img src='images/compose.png' />
-          <Text>Why do you think you're stressed? Write you're thoughts down and watch them disappear..</Text>
+          <Text>Write you're thoughts down and watch them disappear..</Text>
         </Link>
       </Container>
       <Container>

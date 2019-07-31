@@ -5,15 +5,11 @@ export const Button = styled.button`
   border-radius: 3px;
   border: 2px solid palevioletred;
   color: palevioletred;
-  margin: 0.5em 1em;
-  padding: 0.25em 1em;
+  margin: 1em 1em;
+  padding: 0.25em 2em;
 
   ${props => props.primary &&`
     background: palevioletred;
     color: white;
   `}
-`;
-
-export const Container = styled.div`
-  text-align: center;
 `
