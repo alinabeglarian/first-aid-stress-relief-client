@@ -40,7 +40,7 @@ export default class BreathingContainer extends Component {
     }, 7000);
   }
 
-  componentUnmount() {
+  componentWillUnmount() {
     clearInterval(this.timeout);
   }
 

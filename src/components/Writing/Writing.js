@@ -6,13 +6,13 @@ import { zoomOut, zoomIn } from 'react-animations';
 const zoomOutAnimation = keyframes`${zoomOut}`;
 
 const ZoomOutDiv = styled.div`
-  animation: 150s ${zoomOutAnimation};
+  animation: 100s ${zoomOutAnimation};
 `
 
 const zoomInAnimation = keyframes`${zoomIn}`;
 
 const ZoomInDiv = styled.div`
-  animation: 150s ${zoomInAnimation};
+  animation: 100s ${zoomInAnimation};
 `
 
 const Form = styled.form`
@@ -56,7 +56,7 @@ export default function Writing(props) {
         value={props.text}
         onChange={props.onChange}
       />
-      <Button>Submit</Button>
+      <Button>Let it go</Button>
     </Form>
   )
 }

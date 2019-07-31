@@ -7,6 +7,7 @@ export const Button = styled.button`
   color: palevioletred;
   margin: 1em 1em;
   padding: 0.25em 2em;
+  text-transform: uppercase
 
   ${props => props.primary &&`
     background: palevioletred;
