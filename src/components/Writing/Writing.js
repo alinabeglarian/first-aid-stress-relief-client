@@ -6,14 +6,14 @@ import { zoomOut, zoomIn } from 'react-animations';
 const zoomOutAnimation = keyframes`${zoomOut}`;
 
 const ZoomOutDiv = styled.div`
-  animation: 60s ${zoomOutAnimation};
-`;
+  animation: 150s ${zoomOutAnimation};
+`
 
 const zoomInAnimation = keyframes`${zoomIn}`;
 
 const ZoomInDiv = styled.div`
   animation: 150s ${zoomInAnimation};
-`;
+`
 
 const Form = styled.form`
   width: 300px;
@@ -36,9 +36,11 @@ const Input = styled.input`
   margin: 2em;
   padding: 1em;
 `
+
 const P = styled.p`
   font-family: 'Raleway', sans-serif;
-  font-size: 5em;
+  font-size: 3em;
+  width: 500px;
 `
 
 export default function Writing(props) {
@@ -50,7 +52,7 @@ export default function Writing(props) {
       <Input 
         type='text' 
         name='text' 
-        placeholder='Why do you feel stressed?' 
+        placeholder='What made you stressed today?' 
         value={props.text}
         onChange={props.onChange}
       />

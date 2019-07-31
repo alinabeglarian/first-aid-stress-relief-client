@@ -20,7 +20,7 @@ export class WritingContainer extends Component {
     event.preventDefault()
     this.setState({
       text: '',
-      niceMessage: 'Watch how your worries disappear',
+      niceMessage: 'Watch how your worries disappear, and remember that you will be okay.'
     })
   }
 
