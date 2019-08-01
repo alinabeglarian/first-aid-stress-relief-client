@@ -1,4 +1,4 @@
-import { WRITING_FETCHED } from '../actions/writing'
+import { WRITING_FETCHED, CLEAR_WRITING } from '../actions/writing'
 
 const initialState = []
 
@@ -7,6 +7,8 @@ export default (state = initialState, action) => {
     case WRITING_FETCHED:
     console.log(action.writing)
       return action.writing
+    case CLEAR_WRITING:
+      return action.payload
     default:
       return state
   }

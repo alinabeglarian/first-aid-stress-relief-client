@@ -35,6 +35,10 @@ const Input = styled.input`
   text-alight: center;
   margin: 2em;
   padding: 1em;
+  ::placeholder,
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
 `
 
 const P = styled.p`

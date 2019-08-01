@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { clearWriting } from '../actions/writing'
+import { connect } from 'react-redux'
 
 const List = styled.ul`
   width: 100%;
@@ -30,12 +32,17 @@ const ListItem = styled.li`
   }
 `
 
- export default class NavBar extends Component {
+ export class NavBar extends Component {
+  handleClick = () => {
+    this.props.clearWriting()
+  }
+
+
    render() {
      return (
         <List>
           <ListItem>
-            <StyledLink to={'/'}>Home</StyledLink>
+            <StyledLink onClick={this.handleClick} to={'/'}>Home</StyledLink>
           </ListItem>
           <ListItem>
             <StyledLink to={'/about'}>About</StyledLink>
@@ -44,6 +51,12 @@ const ListItem = styled.li`
      )
    }
  }
+
+const mapStateToProps = state => ({
+  writing: state.writing,
+})
+
+export default connect(mapStateToProps, { clearWriting })(NavBar)
 
 
  

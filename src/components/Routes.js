@@ -5,6 +5,7 @@ import ExercisesListContainer from './ExercisesList/ExercisesList'
 import QuotesContainer from './Quotes/QuotesContainer'
 import ImagesContainer from './Images/ImagesContainer'
 import WritingContainer from './Writing/WritingContainer'
+import About from './About'
 
 export default function Routes(props) {
   return (
@@ -14,6 +15,7 @@ export default function Routes(props) {
       <Route path='/quotes' exact component={QuotesContainer} />
       <Route path='/images' exact component={ImagesContainer} />
       <Route path='/writing' exact component={WritingContainer} />
+      <Route path='/about' exact component={About} />
     </div>
   )
 }
