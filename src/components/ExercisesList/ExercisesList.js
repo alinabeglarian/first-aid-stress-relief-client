@@ -59,7 +59,7 @@ export default function ExercisesList(props) {
       <Container>
         <Link to={'/images'}>
           <Img src='images/landscape.png' />
-          <Text>Pick a relaxing picture theme and enjoy.</Text>
+          <Text>Relax while looking at images of cute animals.</Text>
         </Link>
       </Container>
       <Container>

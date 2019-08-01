@@ -1,6 +1,10 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { Button } from '../Buttons'
+import { fadeIn } from 'react-animations';
+
+const fadeInAnimation = keyframes`${fadeIn}`;
+
 
 const Text = styled.div`
   color: black;
@@ -13,13 +17,15 @@ const Text = styled.div`
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  animation: ${fadeInAnimation} 3s;
   }
 `
 
 export default function Quotes(props) {
   return (
     <Text>
-      {props.quote} <br />
+      <em>"{props.quote.quoteText}"</em>
+      <p>- {props.quote.quoteAuthor}</p>
       <Button onClick={props.handleClick}>Another one!</Button>
     </Text>
   )

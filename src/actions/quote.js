@@ -1,5 +1,7 @@
 import * as request from 'superagent'
 
+const baseUrl = "http://localhost:4000"
+
 export const QUOTE_FETCHED = 'QUOTE_FETCHED'
 
 const quoteFetched = quote => ({
@@ -8,9 +10,9 @@ const quoteFetched = quote => ({
 })
 
 export const loadQuote = () => (dispatch) => {
-  request(`https://api.kanye.rest`)
+  request(`${baseUrl}/quotes`)
     .then(response => {
-      dispatch(quoteFetched(response.body.quote))
+      dispatch(quoteFetched(response.body))
     })
     .catch(console.error)
 }

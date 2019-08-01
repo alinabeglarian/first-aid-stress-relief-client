@@ -8,10 +8,16 @@ export class ImagesContainer extends Component {
     this.props.loadImages()
   }
 
+  handleClick = (event) => {
+    event.preventDefault()
+    this.props.loadImages()
+  }
+
   render() {
+    console.log(this.props.images)
     return (
       <div>
-        <Images images={this.props.images}/>
+        <Images images={this.props.images} handleClick={this.handleClick}/>
       </div>
     )
   }

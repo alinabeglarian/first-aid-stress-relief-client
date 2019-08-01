@@ -1,5 +1,7 @@
 import * as request from 'superagent'
 
+const baseUrl = "http://localhost:4000"
+
 export const IMAGES_FETCHED = 'IMAGES_FETCHED'
 
 const imagesFetched = images => ({
@@ -8,10 +10,10 @@ const imagesFetched = images => ({
 })
 
 export const loadImages = () => (dispatch) => {
-  request(`https://aws.random.cat/meow?ref=public-apis`)
+  request(`${baseUrl}/images`)
     .then(response => {
       console.log(response)
-      dispatch(imagesFetched(response.body.file))
+      dispatch(imagesFetched(response.body.url))
     })
     .catch(console.error)
 }
