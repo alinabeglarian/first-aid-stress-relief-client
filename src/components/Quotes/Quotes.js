@@ -3,8 +3,7 @@ import styled, { keyframes } from 'styled-components'
 import { Button } from '../Buttons'
 import { fadeIn } from 'react-animations';
 
-const fadeInAnimation = keyframes`${fadeIn}`;
-
+const fadeInAnimation = keyframes`${fadeIn}`
 
 const Text = styled.div`
   color: black;

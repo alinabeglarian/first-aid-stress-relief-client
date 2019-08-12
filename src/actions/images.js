@@ -1,6 +1,6 @@
 import * as request from 'superagent'
 
-const baseUrl = "http://localhost:4000"
+const baseUrl = "https://first-aid-stress-relief-db.herokuapp.com"
 
 export const IMAGES_FETCHED = 'IMAGES_FETCHED'
 
