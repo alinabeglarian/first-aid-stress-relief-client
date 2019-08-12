@@ -10,7 +10,7 @@ const quoteFetched = quote => ({
 })
 
 export const loadQuote = () => (dispatch) => {
-  request(`${baseUrl}/quotes`)
+  request(`${baseUrl}/randomquote`)
     .then(response => {
       dispatch(quoteFetched(response.body))
     })

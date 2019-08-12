@@ -10,7 +10,7 @@ const imagesFetched = images => ({
 })
 
 export const loadImages = () => (dispatch) => {
-  request(`${baseUrl}/images`)
+  request(`${baseUrl}/randomimage`)
     .then(response => {
       console.log(response)
       dispatch(imagesFetched(response.body.url))
