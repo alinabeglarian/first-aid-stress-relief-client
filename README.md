@@ -8,6 +8,9 @@ This project is the result of a 2.5 days hackathon challange from Codaisseur. Th
 [CLICK HERE](https://github.com/alinabeglarian/first-aid-stress-relief-server) to checkout the repository for the server side of this project. 
 
 ## Table of contents
+* [Technologies used]
+* [Goals for this project]
+* [Create React App]
 
 ## Technologies used
 
