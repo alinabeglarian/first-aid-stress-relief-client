@@ -13,6 +13,9 @@ This project is the result of a 2.5 days hackathon challange from Codaisseur. Th
 * [Create React App](#create-react-app)
 
 ## Technologies used
+* React
+* Redux
+* [Styled Components](https://www.styled-components.com/)
 
 ## Goals for this project
 
