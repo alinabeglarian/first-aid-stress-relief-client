@@ -16,6 +16,8 @@ This project is the result of a 2.5 days hackathon challange from Codaisseur. Th
 * React
 * Redux
 * [Styled Components](https://www.styled-components.com/)
+* [React Animations](https://www.npmjs.com/package/react-animations)
+* [React Sound](https://www.npmjs.com/package/react-sound)
 
 ## Goals for this project
 The goal for this project was to build a working stress-related app in 2.5 days, while using a new technology. 
