@@ -10,7 +10,7 @@ This project is the result of a 2.5 days hackathon challange from Codaisseur. Th
 ## Table of contents
 * [Technologies used](#technologies-used)
 * [Goals for this project](#goals-for-this-project)
-* [Create React App](#create-react-app)
+* [Create React App Docs](#create-react-app)
 
 ## Technologies used
 * React
