@@ -1,4 +1,4 @@
-# :star: :sparkles: First Aid Stress Relief :sparkles: :star:
+# :star: :sparkles: FIRST AID STRESS RELIEF :sparkles: :star:
 
 ## :telescope: [CHECKOUT THE DEPLOYED VERSION HERE](https://first-aid-stress-relief.herokuapp.com/) :telescope:
 
