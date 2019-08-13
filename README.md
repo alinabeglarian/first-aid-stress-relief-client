@@ -18,5 +18,11 @@ This project is the result of a 2.5 days hackathon challange from Codaisseur. Th
 * [Styled Components](https://www.styled-components.com/)
 
 ## Goals for this project
+The goal for this project was to build a working stress-related app in 2.5 days, while using a new technology. 
+My personal goal for this project was to make an app, where I could practice my CSS skills and make a polished, nice looking app. Because we had to use a new technology, I decided to learn Styled Components for this reason.
 
 ## Create React App
+
+This project was made using the create-react-app cli. 
+
+**[The standard create-react-app docs can be found in here](https://github.com/facebook/create-react-app)**
