@@ -8,8 +8,10 @@ This project is the result of a 2.5 days hackathon challange from Codaisseur. Th
 [CLICK HERE](https://github.com/alinabeglarian/first-aid-stress-relief-server) to checkout the repository for the server side of this project. 
 
 ## Table of contents
+
 * [Technologies used](#technologies-used)
 * [Goals for this project](#goals-for-this-project)
+* [Setup](#setup)
 * [Create React App Docs](#create-react-app)
 
 ## Technologies used
@@ -22,6 +24,12 @@ This project is the result of a 2.5 days hackathon challange from Codaisseur. Th
 ## Goals for this project
 The goal for this project was to build a working stress-related app in 2.5 days, while using a new technology. 
 My personal goal for this project was to make an app, where I could practice my CSS skills and make a polished, nice looking app. Because we had to use a new technology, I decided to learn Styled Components for this reason.
+
+## Setup
+
+1. git clone
+2. npm install
+3. npm run start
 
 ## Create React App
 
