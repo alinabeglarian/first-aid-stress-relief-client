@@ -1,4 +1,4 @@
-# First Aid Stress Relief
+# :sparkles: First Aid Stress Relief :sparkles:
 
 ## Available Scripts
 
